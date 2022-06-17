@@ -85,7 +85,7 @@
 	$.fn.refresh = function( selector ) {
 		var elems;
 
-        /**
+		/**
 		 * {@link https://api.jquery.com/selector/|.selector} was removed in jQuery 3.0
 		 * 
 		 * Selector strings should be added as parameter of the method
@@ -820,9 +820,9 @@
 		sizing: function( jacket ) {
 			var current_width, jacket_classes, px_width, size_intermediate, size_medium, size_large;
 
-            jacket = jacket || $( "#jacket" );
+			jacket = jacket || $( "#jacket" );
 
-            current_width = $( window ).width();
+			current_width = $( window ).width();
 
 			size_intermediate = "size-intermediate size-smallish size-lt-medium size-lt-large size-lt-xlarge size-gt-small";
 			size_medium = "size-medium size-lt-xlarge size-lt-large size-gt-intermediate size-gt-smallish size-gt-small";
@@ -933,7 +933,7 @@
 			// Whether opening or closing, the Spine will be animating from this point forward.
 			body.addClass( "spine-animating" );
 
-            setTimeout( function() {
+			setTimeout( function() {
 				// Tell the browser and stylesheet what direction the Spine is animating.
 				if ( html.hasClass( "spine-mobile-open" ) ) {
 					body.addClass( "spine-move-left" );
@@ -1673,7 +1673,7 @@
 
 ( function( $ ) {
 	"use strict";
-	$( document ).ready( function() {
+	$( function() {
 		$( "html" ).removeClass( "no-js" ).addClass( "js" );
 		var spineoptions = window.spineoptions || {};
 		$.spine( spineoptions );
